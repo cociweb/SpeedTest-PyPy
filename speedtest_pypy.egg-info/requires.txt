@@ -1,6 +1,0 @@
-aiohttp>=3.8.5
-argparse>=1.4.0
-async-timeout>=4.0.3
-dataclasses-json>=0.5.7
-python-dotenv>=1.0.0
-requests>=2.31.0
