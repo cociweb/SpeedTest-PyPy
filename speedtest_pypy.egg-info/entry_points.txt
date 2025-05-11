@@ -1,0 +1,2 @@
+[console_scripts]
+speedtest-pypy = speedtest_pypy.cli:main

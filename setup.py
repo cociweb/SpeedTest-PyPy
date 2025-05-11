@@ -10,7 +10,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'speedtest++=speedtest-pypy.cli:main',
+            'speedtest-pypy=speedtest_pypy.cli:main',
         ],
     },
     author="cociweb",

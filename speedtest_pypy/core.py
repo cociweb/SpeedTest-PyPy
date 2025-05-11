@@ -1,4 +1,5 @@
 from dataclasses import dataclass
+from .models import ServerInfo
 from typing import List, Optional, Dict
 import asyncio
 import aiohttp
@@ -10,18 +11,6 @@ from concurrent.futures import ThreadPoolExecutor
 from .network import NetworkTester
 from .utils import calculate_distance, generate_payload
 
-@dataclass
-class ServerInfo:
-    id: int
-    url: str
-    lat: float
-    lon: float
-    name: str
-    country: str
-    sponsor: str
-    host: str
-    distance: float = 0.0
-    latency: float = 0.0
 
 class SpeedTest:
     def __init__(self, min_server_version: float = 2.3):
@@ -60,6 +49,7 @@ class SpeedTest:
                         sponsor=server.get("sponsor"),
                         host=server.get("host")
                     ))
+
 
     async def test_latency(self, server: ServerInfo) -> float:
         """Test latency to a specific server"""

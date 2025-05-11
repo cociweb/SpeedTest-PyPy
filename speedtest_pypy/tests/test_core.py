@@ -1,6 +1,6 @@
 import unittest
 from unittest.mock import patch, MagicMock
-from speedtest-pypy.core import SpeedTest
+from speedtest_pypy.core import SpeedTest
 import asyncio
 
 class TestSpeedTest(unittest.TestCase):

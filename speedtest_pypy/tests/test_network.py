@@ -1,6 +1,6 @@
 import unittest
 from unittest.mock import patch, MagicMock
-from speedtest-pypy.network import NetworkTester
+from speedtest_pypy.network import NetworkTester
 import asyncio
 
 class TestNetworkTester(unittest.TestCase):

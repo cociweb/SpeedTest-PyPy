@@ -1,5 +1,5 @@
 import unittest
-from speedtest-pypy.utils import calculate_distance, generate_payload
+from speedtest_pypy.utils import calculate_distance, generate_payload
 
 class TestUtils(unittest.TestCase):
     def test_calculate_distance(self):
